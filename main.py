@@ -17,15 +17,9 @@ while game_on:
             if game.win_lose_or_draw() == "Win X":
                 print("Player 1 wins!")
                 # end or restart game
-                end_or_restart = input("Will you like to play again? y/n: ")
-                if end_or_restart.lower() == "n":
-                    game_on = False
             elif game.win_lose_or_draw() == "Win O":
                 print("Player 2 wins!")
                 # end or restart game
-                end_or_restart = input("Will you like to play again? y/n: ")
-                if end_or_restart.lower() == "n":
-                    game_on = False
             else:
                 pass
 
@@ -33,9 +27,6 @@ while game_on:
                 if game.win_lose_or_draw() is None:
                     print("It's a draw")
                     # end or restart game
-                    end_or_restart = input("Will you like to play again? y/n: ")
-                    if end_or_restart.lower() == "n":
-                        game_on = False
 
             clear_1 = True
         else:
@@ -51,15 +42,9 @@ while game_on:
             if game.win_lose_or_draw() == "Win X":
                 print("Player 1 wins!")
                 # end or restart game
-                end_or_restart = input("Will you like to play again? y/n: ")
-                if end_or_restart.lower() == "n":
-                    game_on = False
             elif game.win_lose_or_draw() == "Win O":
                 print("Player 2 wins!")
                 # end or restart game
-                end_or_restart = input("Will you like to play again? y/n: ")
-                if end_or_restart.lower() == "n":
-                    game_on = False
             else:
                 pass
 
@@ -67,9 +52,6 @@ while game_on:
                 if game.win_lose_or_draw() is None:
                     print("It's a draw")
                     # end or restart game
-                    end_or_restart = input("Will you like to play again? y/n: ")
-                    if end_or_restart.lower() == "n":
-                        game_on = False
             clear_2 = True
         else:
             print(f"{game.check_input(2, p2_input)}")
